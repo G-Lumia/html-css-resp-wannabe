@@ -138,4 +138,12 @@ img {
     }
  }
 
- 
+   /* responsive solution for a mobile device with  max width 480px */
+
+  
+   @media screen and (max-width: 480px) {
+
+    .container{
+        width: 480px;
+    }
+ }
