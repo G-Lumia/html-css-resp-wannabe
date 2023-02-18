@@ -131,10 +131,19 @@ img {
 
  /* responsive solution for a tablet with  max width 768px */
 
- @media screen and (max-width: 768px) {
-
+ @media screen and (min-width:480px) and (max-width: 768px) {
     .container{
-        width: 768px;
+        width:auto;
+        max-width: 768px;
+    }
+ }
+
+ /* responsive solution for a screen between 768 to 1120 pixels of width  */
+
+ @media screen and (min-width:768px) and (max-width: 1120px) {
+    .container{
+        width:auto;
+        max-width: 1120px;
     }
  }
 
@@ -144,6 +153,18 @@ img {
    @media screen and (max-width: 480px) {
 
     .container{
-        width: 480px;
+        width: auto;
+        max-width: 480px;
     }
+
+    .row{
+        flex-flow:column;
+        align-items: center;
+    }
+
+    .lessons .col, .steps .col, .why-us .col{
+        width:100%;
+        margin-bottom:1rem;
+    }
+    
  }
